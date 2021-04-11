@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1 class="page-header">Main Page</h1>
+
+    <form action="">
+        <div>
+            <a href="/login" class="btn btn-primary">If you are signed in</a>
+            
+            <a href="/register" class="btn btn-secondary">Register Now</a>
+        </div>
+    </form>
+
+    <h1 class="help-block">Hi <%= name%></h1>
+
+    <form action="/logout?_method=DELETE" method="post">
+        <button type="submit" class="btn btn-primary">Log Out</button>
+    </form>
+
+
+    <%- include('./bootstrap.txt')%>
+
+</body>
+</html>
